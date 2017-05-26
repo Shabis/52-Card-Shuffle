@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/shuffle.js"></script>
+    <title>52 Card Shuffle</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Welcome to 52 Card Shuffle!</h1>
+      <div class="row" id="button-row">
+        <button type="button" class="btn btn-info shuffle-button">Shuffle Cards</button>
+        <button type="button" class="btn btn-info sort-button">Sort Cards</button>
+      </div>
+      <div class="ordered-cards">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="cards" src="images/ace_of_hearts.png" alt="Ace of Hearts">
+            <img class="cards" src="images/king_of_hearts.png" alt="King of Hearts">
+            <img class="cards" src="images/queen_of_hearts.png" alt="Queen of Hearts">
+            <img class="cards" src="images/jack_of_hearts.png" alt="Jack of Hearts">
+            <img class="cards" src="images/10_of_hearts.png" alt="10 of Hearts">
+            <img class="cards" src="images/9_of_hearts.png" alt="9 of Hearts">
+            <img class="cards" src="images/8_of_hearts.png" alt="8 of Hearts">
+            <img class="cards" src="images/7_of_hearts.png" alt="7 of Hearts">
+            <img class="cards" src="images/6_of_hearts.png" alt="6 of Hearts">
+            <img class="cards" src="images/5_of_hearts.png" alt="5 of Hearts">
+            <img class="cards" src="images/4_of_hearts.png" alt="4 of Hearts">
+            <img class="cards" src="images/3_of_hearts.png" alt="3 of Hearts">
+            <img class="cards" src="images/2_of_hearts.png" alt="2 of Hearts">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img class="cards" src="images/ace_of_spades.png" alt="Ace of Spades">
+            <img class="cards" src="images/king_of_spades.png" alt="King of Spades">
+            <img class="cards" src="images/queen_of_spades.png" alt="Queen of Spades">
+            <img class="cards" src="images/jack_of_spades.png" alt="Jack of Spades">
+            <img class="cards" src="images/10_of_spades.png" alt="10 of Spades">
+            <img class="cards" src="images/9_of_spades.png" alt="9 of Spades">
+            <img class="cards" src="images/8_of_spades.png" alt="8 of Spades">
+            <img class="cards" src="images/7_of_spades.png" alt="7 of Spades">
+            <img class="cards" src="images/6_of_spades.png" alt="6 of Spades">
+            <img class="cards" src="images/5_of_spades.png" alt="5 of Spades">
+            <img class="cards" src="images/4_of_spades.png" alt="4 of Spades">
+            <img class="cards" src="images/3_of_spades.png" alt="3 of Spades">
+            <img class="cards" src="images/2_of_spades.png" alt="2 of Spades">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img class="cards" src="images/ace_of_diamonds.png" alt="Ace of Diamonds">
+            <img class="cards" src="images/king_of_diamonds.png" alt="King of Diamonds">
+            <img class="cards" src="images/queen_of_diamonds.png" alt="Queen of Diamonds">
+            <img class="cards" src="images/jack_of_diamonds.png" alt="Jack of Diamonds">
+            <img class="cards" src="images/10_of_diamonds.png" alt="10 of Diamonds">
+            <img class="cards" src="images/9_of_diamonds.png" alt="9 of Diamonds">
+            <img class="cards" src="images/8_of_diamonds.png" alt="8 of Diamonds">
+            <img class="cards" src="images/7_of_diamonds.png" alt="7 of Diamonds">
+            <img class="cards" src="images/6_of_diamonds.png" alt="6 of Diamonds">
+            <img class="cards" src="images/5_of_diamonds.png" alt="5 of Diamonds">
+            <img class="cards" src="images/4_of_diamonds.png" alt="4 of Diamonds">
+            <img class="cards" src="images/3_of_diamonds.png" alt="3 of Diamonds">
+            <img class="cards" src="images/2_of_diamonds.png" alt="2 of Diamonds">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img class="cards" src="images/ace_of_clubs.png" alt="Ace of Clubs">
+            <img class="cards" src="images/king_of_clubs.png" alt="King of Clubs">
+            <img class="cards" src="images/queen_of_clubs.png" alt="Queen of Clubs">
+            <img class="cards" src="images/jack_of_clubs.png" alt="Jack of Clubs">
+            <img class="cards" src="images/10_of_clubs.png" alt="10 of Clubs">
+            <img class="cards" src="images/9_of_clubs.png" alt="9 of Clubs">
+            <img class="cards" src="images/8_of_clubs.png" alt="8 of Clubs">
+            <img class="cards" src="images/7_of_clubs.png" alt="7 of Clubs">
+            <img class="cards" src="images/6_of_clubs.png" alt="6 of Clubs">
+            <img class="cards" src="images/5_of_clubs.png" alt="5 of Clubs">
+            <img class="cards" src="images/4_of_clubs.png" alt="4 of Clubs">
+            <img class="cards" src="images/3_of_clubs.png" alt="3 of Clubs">
+            <img class="cards" src="images/2_of_clubs.png" alt="2 of Clubs">
+          </div>
+        </div>
+      </div>
+      <div class="card-backs">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+            <img class="cards" src="images/card_back.png" alt="Card face down">
+          </div>
+        </div>
+      </div>
+      <div id="results"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+body {
+  background-image: url(../images/greenbackground.jpg);
+}
+
+#title {
+  color: white;
+  margin: 1em;
+  text-align: center;
+}
+
+img {
+  width: 5em;
+  margin: 0em 1em 1em 0em;
+}
+
+.ordered-cards {
+  display: none;
+}
+
+#button-row {
+  text-align: center;
+}
+
+.btn {
+  margin: 2em 2em 2em 0em;
+}
